@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header 구역 */
+
+#header {
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eeeeee;
+    background: #fff;
+}
+
+#header .logo {
+    margin-top: 15px;
+    float: left;
+}
+
+#header .opennav {
+    display: none;
+}
+
+#header #nav {
+    float: left;
+    margin: 0 0 0 20px;
+    position: relative;
+    font-size: 16px;
+}
+
+#header #nav .depth1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #444444;
+}
+
+#header #nav .depth1>li {
+    float: left;
+    position: relative;
+}
+
+#header #nav .depth1>li>a {
+    padding: 50px 34px 38px;
+    position: relative;
+}
+
+#header #nav .depth1>li>a::after {
+    content: '';
+    right: 50%;
+    left: 50%;
+    height: 3px;
+    background: #c30e2e;
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    transition: all 0.3s;
+}
+
+#header #nav .depth1>li:hover>a::after {
+    right: 0;
+    left: 0;
+}
+
+#header #nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    color: #fff;
+    display: none;
+    padding-top: 20px;
+}
+
+#header #nav .depth2>li>a {
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
+    display: block;
+    letter-spacing: -1.5px;
+    color: #cccccc;
+}
+
+#header #nav .depth2>li>a:hover {
+    color: #c30e2e;
+}
+
+#header .deco {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: #000;
+    display: none;
+}
+
+/* #header #nav:hover+.deco {
+    display: block;
+} */
+
+#header .txt {
+    float: right;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+#header .txt span {
+    padding: 0 5px;
+}
+
+#header .box {
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: url(../images/go_main_franchise_bg.png) no-repeat;
+    width: 146px;
+    height: 95px;
+    background-position: 0 0;
+    padding-left: 15px;
+}
+
+#header .box:hover {
+    background-position: 0 -100px;
+}
+
+#header .box span {
+    background: url(../images/go_main_franchise_ico.png) no-repeat;
+    padding-left: 45px;
+    display: block;
+    margin-top: 15px;
+}
+
+#header .box h2 {
+    display: none;
+}
+
+/* quickmenuu 구역 */
+
+.quickmenu {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 79px;
+    margin: -230px 0 0;
+    z-index: 1;
+}
+
+/* footer 구역 */
+
+#footer .foot1 {
+    float: left;
+    width: 37%;
+    height: 166px;
+    background: #575757;
+    position: relative;
+    padding-top: 39px;
+}
+
+#footer .foot1 .footlogo {
+    float: right;
+    padding-right: 20px;
+}
+
+#footer .foot1 .foottxt { 
+    font-size: 12px;
+    line-height: 16px;
+    color: #b5b4b4;
+    padding-right: 20px;
+    float: right;
+    width: 200px;
+    padding-top: 53px;
+}
+
+#footer .foot2 {
+    float: right;
+    width: 63%;
+    height: 166px;
+    background: #f1f2f2;
+    position: relative;
+    padding-left: 30px;
+}
+
+#footer .foot2 .menu2 {
+    position: relative;
+}
+
+#footer .foot2 .menu2 li {
+    float: left;
+}
+
+#footer .foot2 .menu2>li {
+    position: relative;
+}
+
+#footer .foot2 .menu2>li::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    background: #a4a4a4;
+}
+
+#footer .foot2 .menu2>li:nth-child(1)::before {
+    display: none;
+}
+
+#footer .foot2 .menu2>li>a {
+    display: block;
+    padding: 30px 17px 10px 17px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #444444;
+    line-height: 21px;
+}
+
+#footer .foot2 .menu2 li a strong {
+    font-size: 18px;
+}
+
+#footer .foot2 .center {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 17px;
+    padding-top: 20px;
+}
+
+#footer .foot2 .center .time {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+#footer .foot2 .address {
+    padding-left: 17px;
+}
+
+#footer .foot2 .address span {
+    margin: 0 31px 0 0;
+    font-size: 13px;
+    color: #666666;
+    position: relative;
+}
+
+#footer .foot2 .address span::before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    background: #a4a4a4;
+}
+
+#footer .foot2 .address span:nth-child(1)::before {
+    display: none;
+}
