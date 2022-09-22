@@ -320,6 +320,12 @@ section {
     padding-right: 13px;
 }
 
+#section .article2 .boxmenu7 {
+    width: 400px;
+    height: 450px;
+    float: left;
+}
+
 #section .article3 {
     float: left;
     width: 100%;

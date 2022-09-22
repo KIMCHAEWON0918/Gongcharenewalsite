@@ -2,6 +2,12 @@
 
 @media screen and (max-width:1200px) { 
 
+#section .article1 .arrright {
+    /* 메뉴위에 화살표 모양 생성되어 z-index 낮춤 */
+    right: 50px;
+    z-index: 1;
+}
+
 #section .article2 .boxmenu1{
     float: left;
     width: 100%;
@@ -69,6 +75,10 @@
     width: 400px;
     height: 450px;
     float: left;
+    display: none;
+}
+
+#section .article2 .boxmenu7 {
     display: none;
 }
 

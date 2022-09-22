@@ -13,7 +13,7 @@ $(window).on("resize", function(){
     init()
 })
 
-$("#header #nav").hover(function(){
+$("#header #nav, .deco").hover(function(){
     if ($('html').hasClass("pc")) {
         $(".depth2").stop().slideDown()
         $(".deco").stop().slideDown()
