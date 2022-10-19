@@ -2,10 +2,17 @@
 
 @media screen and (max-width:1200px) { 
 
+
+#section .article1 .arrleft {
+    /* 화살표 넓이가 넓어 좁히게 수정 */
+    left: 100px;
+    z-index: 9999;
+}
+
 #section .article1 .arrright {
-    /* 메뉴위에 화살표 모양 생성되어 z-index 낮춤 */
-    right: 50px;
-    z-index: 1;
+    /* 화살표 넓이가 넓어 좁히게 수정 */
+    right: 100px;
+    z-index: 9999;
 }
 
 #section .article2 .boxmenu1{
@@ -138,6 +145,11 @@
 
 @media screen and (max-width:635px) {
 
+#section .article1 {
+    position: relative;
+    display: none;
+}
+
 #section .menubox {
     /* left, right 수정 */
     position: absolute;
@@ -167,6 +179,11 @@
     height: auto;
     text-align: center;
     display: none;
+}
+
+#section .article2 .boxmenu2, #section .article2 .boxmenu3 {
+    /* 메뉴에 가려져서 안보여서 margin으로 조절 */
+    margin-top: 150px;
 }
 
 }

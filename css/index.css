@@ -37,7 +37,7 @@ section {
 
 #section .article1 .slide {
     width: 100%;
-    margin-top: 110px;
+    margin-top: 150px;
 }
 
 #section .article1 .slick-arrow {
@@ -49,12 +49,12 @@ section {
 }
 
 #section .article1 .arrleft {
-    left: 50px;
+    left: 200px;
     z-index: 9999;
 }
 
 #section .article1 .arrright {
-    right: 50px;
+    right: 200px;
     z-index: 9999;
 }
 
